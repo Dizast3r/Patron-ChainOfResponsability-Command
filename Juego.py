@@ -34,7 +34,7 @@ class Juego:
             velocidadY=0  # El jugador no se mueve verticalmente
         )
         
-        # Lista de obstáculos (Sustitución de Liskov: Obstaculo es subtipo de Entidad)
+
         self.vehiculos = []
         
         # Mapeo de comandos
@@ -89,9 +89,9 @@ class Juego:
     
     def _actualizarVelocidadObstaculos(self):
         """Aumenta la velocidad de los obstáculos con el tiempo"""
-        tiempo_transcurrido = (pygame.time.get_ticks() - self.tiempo_inicio) // 1000  # Segundos
-        # Aumenta 0.5 de velocidad cada 10 segundos
-        self.velocidad_obstaculos = 5 + (tiempo_transcurrido // 10) * 0.5
+        tiempo_transcurrido = (pygame.time.get_ticks() - self.tiempo_inicio) // 500  # Segundos
+        # Aumenta 0.8 de velocidad cada 5 segundos
+        self.velocidad_obstaculos = 5 + (tiempo_transcurrido // 10) * 0.8
     
     def _crearObstaculo(self):
         """Crea un obstáculo en un carril aleatorio en la parte superior"""
@@ -102,7 +102,7 @@ class Juego:
         # Elegir imagen aleatoria de carro
         imagen_carro = f"Assets/carro{random.randint(1, 3)}.png"
         
-        # Sustitución de Liskov: Obstaculo puede usarse como Entidad
+
         obstaculo = Obstaculo(imagen_carro, posicion_x, posicion_y, velocidadY=self.velocidad_obstaculos)
         self.vehiculos.append(obstaculo)
     
