@@ -230,8 +230,6 @@ class Juego:
                 
                 # Manejar eventos de entrada (Cadena 1)
                 for evento in pygame.event.get():
-                    if evento.type == pygame.QUIT:
-                        self.corriendo = False
                     self.handlerMoverDerecha.manejarEntrada(evento, self)
                 
                 # Actualizar velocidad de obstáculos

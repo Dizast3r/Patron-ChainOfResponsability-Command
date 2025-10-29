@@ -67,7 +67,7 @@ class HandlerSalir(HandlerEntradas):
     def manejarEntrada(self, opcion, juego):
         if opcion.type == pygame.KEYDOWN:
             if opcion.key == pygame.K_ESCAPE:
-                pygame.quit()
+                juego.corriendo = False
                 return
 
         #se detendria aca la cadena de entradas
