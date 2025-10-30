@@ -43,7 +43,7 @@ class ComandoMoverIzquierda(Comando):
 - **Extensibilidad**: Es fácil agregar nuevos comandos (saltar, disparar, etc.) sin modificar el código existente
 - **Configurabilidad**: El mapeo de teclas a comandos se define en un diccionario, permitiendo cambiar controles fácilmente
 
-#### Implementación en Game.py:
+#### Implementación en Juego.py:
 ```python
 self.comandos = {
     pygame.K_RIGHT: ComandoMoverDerecha(),
