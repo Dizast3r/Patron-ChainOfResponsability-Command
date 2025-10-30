@@ -1,7 +1,6 @@
 # Juego de Carriles - Patrones de Diseño
 
 Juego de autos desarrollado en Pygame que implementa los patrones **Command** y **Chain of Responsibility** para gestionar la entrada del usuario y la lógica del juego.
-
 ---
 
 ## 🎮 Descripción del Juego
@@ -116,14 +115,16 @@ class HandlerColisiones(HandlerEventos):
 ```
 ChainOfResponsability-Command/
 │
+├── Assets/               # Carpeta de recursos gráficos
+│   ├── jugador.png       # Sprite del jugador
+│   ├── carro1.png        # Sprite de obstáculo 1
+│   ├── carro2.png        # Sprite de obstáculo 2
+│   └── carro3.png        # Sprite de obstáculo 3
+│
 ├── Juego.py              # Clase Game - Loop principal y lógica del juego
 ├── Entidades.py          # Clases Entidad, Jugador, Obstaculo
 ├── Comandos.py           # Patrón Command - Comandos de movimiento
 ├── Handlers.py           # Patrón Chain of Responsibility - Handlers
-├── jugador.png           # Sprite del jugador
-├── carro1.png            # Sprite de obstáculo 1
-├── carro2.png            # Sprite de obstáculo 2
-├── carro3.png            # Sprite de obstáculo 3
 └── README.md
 ```
 
