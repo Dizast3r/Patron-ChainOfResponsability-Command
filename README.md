@@ -2,8 +2,6 @@
 
 Juego de autos desarrollado en Pygame que implementa los patrones **Command** y **Chain of Responsibility** para gestionar la entrada del usuario y la lógica del juego.
 
-<img width="1972" height="592" alt="image" src="https://github.com/user-attachments/assets/e2761244-440f-4924-8b6a-213762d96932" />
-
 ---
 
 ## 🎮 Descripción del Juego
